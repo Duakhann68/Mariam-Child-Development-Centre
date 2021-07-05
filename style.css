@@ -1,0 +1,187 @@
+/* CSS STYLE SHEET */
+
+*{
+    
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+/* NAVIGATION BAR  */
+
+#navbar{
+    display: flex;
+    position: relative;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: green;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 90%;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+#navbar ul{
+    display: flex;
+    margin: 16px 15px;  
+    list-style: none;
+}
+#navbar  ul li a{
+    border-radius: 27px;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 6px 24px;
+    font-size: 1.3rem
+    
+  
+}
+#navbar  ul li a:hover{
+    color: black;
+    background-color: rgb(241, 189, 189);
+  
+}
+
+/* NAVIGATION BAR: LOGO  */
+#logo img{
+    margin: 7px 20px;
+    width: 58px;
+    height: 61px;
+}
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#home::before{
+    content: "";
+    background: url("backgroundhome.jpg")no-repeat center center/cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 435px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+#home h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color: white;
+    padding: 13px 94px;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* ACTIVITIES SECTION  */
+
+#classcontainer{
+     background-color: rgb(228 228 65 / 93%);
+}
+#classcontainer h1{
+    margin-top: 23px;
+    color: white;
+    margin-bottom: 14px;
+}
+
+#activities{
+    display: flex;
+    /* margin: 34px; */
+}
+#activities .box{
+    border: 2px solid red;
+    padding: 0px 18px;
+    border-radius: 27px;
+    margin: 3px 9px;
+    background-color:#f9f1f1;
+}
+#activities .box img{
+    height: 125px;
+    width: 133px;
+    display: block;
+    margin:29px auto;
+}
+#activities p{
+    padding-bottom: 25px;
+}
+
+/* FEE SECTION */
+#fee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#fee::before{
+    content: "";
+    background: url("")no-repeat center center/cover;
+    /* position: absolute; */
+    top: 0%;
+    left: 0%;
+    height: 435px;
+    width: 100%;
+    /* z-index: -1; */
+    /* opacity: 0.8; */
+}
+#fee h1{
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+#fee p{
+    color: white;
+    padding: 13px 94px;
+    font-size: 1.4rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* UTILITY CLASSES */
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 38px;
+    font-family: 'Bree Serif', serif;
+
+    
+    
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 10px;
+    font-family: 'Bree Serif', serif;
+
+    
+    
+}
+.btn{
+    color: white;
+    border:2px solid white;
+    background-color: #a1705f;
+    border-radius: 14px;
+    padding: 10px 10px;
+    display: block;
+    width: 160px;
+    margin: 16px auto;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: 'Balsamiq Sans', cursive;
+
+
+}
+.btn:hover{
+    background-color:burlywood ;
+    
+}
+
