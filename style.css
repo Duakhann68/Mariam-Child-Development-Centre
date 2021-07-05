@@ -114,24 +114,23 @@
 #activities p{
     padding-bottom: 25px;
 }
-
+ 
 /* FEE SECTION */
-#fee{
+
+#fee {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    
-}
-#fee::before{
+    flex-direction: column;
+    position: relative;
     content: "";
-    background: url("")no-repeat center center/cover;
-    /* position: absolute; */
+    height: 435px;
     top: 0%;
     left: 0%;
-    height: 435px;
-    width: 100%;
-    /* z-index: -1; */
-    /* opacity: 0.8; */
+    z-index: -1;
+    opacity: 0.8;
+    background-image: url("fee1.jpg")
+    
+    
 }
 #fee h1{
     color: white;
@@ -140,9 +139,50 @@
 #fee p{
     color: white;
     padding: 13px 94px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Bree Serif', serif;
 }
+
+/* Contact section */
+
+#contactsection{
+    font-family: 'Bree Serif', serif;
+
+    position: relative;
+}
+#contactsection::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('telephone-586268_1920.jpg') no-repeat center center/cover;
+}
+#contact{
+
+    justify-content: center; 
+    padding-bottom: 12px;
+    display: flex;
+    font-family: 'Bree Serif', serif;
+
+}
+#contact label{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.1rem;
+}
+#contact input,
+#contact textarea{
+    padding: 3px 3px;
+    margin: 3px;
+    font-size: 1rem;
+    width: 100%;
+
+}
+
+
+
+
 
 
 /* UTILITY CLASSES */
